@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Form from "./form.js";
 import Diet from "./diet.js";
-import Countries from "./countries.js"
+import Countries from "./countries.js";
+import WhyMars from "./why_mars.js";
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
       <Form />
       <Countries />
       <Diet />
+      <WhyMars />
       </>
     )
   }
