@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import countries from "./countries_list.js";
 
 class Form extends Component {
   constructor() {
@@ -69,10 +70,6 @@ class Form extends Component {
 
           <br />
 
-          <label htmlFor="country">Home Country: </label>
-          <select className="country" name="country">
-            <option name="" value=""></option>
-          </select>
         </form>
       </div>
     )
