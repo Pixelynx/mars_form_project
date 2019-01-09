@@ -5,7 +5,8 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      name: ""
+      name: "",
+      dob: ""
     };
   };
 
@@ -19,7 +20,7 @@ class Form extends Component {
   months = () => {
     let arr = [];
     let mo = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-    for(let i = 0; i <= 11; i++) {
+    for(let i = 0; i <= mo.length; i++) {
       arr.push(<option>{mo[i]}</option>)
     }
     return arr;
@@ -53,18 +54,38 @@ class Form extends Component {
       <div className="register">
         <form>
           <label htmlFor="name">Name: </label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
+          <input type="text"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.handleChange} />
 
           <br />
 
           <label htmlFor="dob">DOB: </label>
-          <select className="day" name="day">
+          <select className="day"
+                  name="day"
+                  value={this.state.day}
+                  onChange={this.handleChange}
+                  >
+                  <option value=""></option>
             {days}
           </select>
-          <select className="month" name="month">
+          <select
+                  className="month"
+                  name="month"
+                  value={this.state.month}
+                  onChange={this.handleChange}
+                  >
+                  <option value=""></option>
             {months}
           </select>
-          <select className="year" name="year">
+          <select
+                  className="year"
+                  name="year"
+                  value={this.state.year}
+                  onChange={this.handleChange}
+                  >
+                  <option value=""></option>
             {years}
           </select>
 

@@ -4,7 +4,7 @@ class WhyMars extends Component {
   constructor() {
     super();
     this.state = {
-      text: ""
+      why_mars: ""
     }
   }
 
@@ -25,7 +25,9 @@ class WhyMars extends Component {
                 id="why_mars"
                 name="why_mars"
                 placeholder="I'll make it bigger later"
-                onChange={this.handleChange} />
+                value={this.state.why_mars}
+                onChange={this.handleChange}
+                />
         </div>
       </>
     )

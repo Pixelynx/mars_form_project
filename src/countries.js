@@ -9,6 +9,12 @@ class Countries extends Component {
     }
   }
 
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
   renderCountry = () => {
 
     let results = countries.map(country => {
@@ -22,7 +28,7 @@ class Countries extends Component {
     return(
       <>
         <div>
-          <select name="countries">
+          <select name="country" value={this.state.country} onChange={this.handleChange}>
             {country}
           </select>
         </div>
