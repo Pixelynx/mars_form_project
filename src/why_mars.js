@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 
 class WhyMars extends Component {
   constructor() {
@@ -24,7 +25,7 @@ class WhyMars extends Component {
                 type="text"
                 id="why_mars"
                 name="why_mars"
-                placeholder="I'll make it bigger later"
+                // placeholder="Detail your answer here..."
                 value={this.state.why_mars}
                 onChange={this.handleChange}
                 />

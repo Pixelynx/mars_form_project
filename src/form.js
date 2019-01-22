@@ -5,8 +5,7 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      name: "",
-      dob: ""
+      name: ""
     };
   };
 
@@ -53,43 +52,50 @@ class Form extends Component {
     return(
       <div className="register">
         <form>
-          <label htmlFor="name">Name: </label>
-          <input type="text"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.handleChange} />
 
-          <br />
+          <div className="name">
+            <label htmlFor="name">Name: </label>
+            <br />
+            <input type="text"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.handleChange} />
+          </div>
 
-          <label htmlFor="dob">DOB: </label>
-          <select className="day"
-                  name="day"
-                  value={this.state.day}
-                  onChange={this.handleChange}
-                  >
-                  <option value=""></option>
-            {days}
-          </select>
-          <select
-                  className="month"
-                  name="month"
-                  value={this.state.month}
-                  onChange={this.handleChange}
-                  >
-                  <option value=""></option>
-            {months}
-          </select>
-          <select
-                  className="year"
-                  name="year"
-                  value={this.state.year}
-                  onChange={this.handleChange}
-                  >
-                  <option value=""></option>
-            {years}
-          </select>
+          
 
-          <br />
+          <div className="dob">
+            <label>DOB: </label>
+            <br />
+            <select className="day"
+                    name="day"
+                    value={this.state.day}
+                    onChange={this.handleChange}
+                    >
+                    <option value=""></option>
+              {days}
+            </select>
+            <select
+                    className="month"
+                    name="month"
+                    value={this.state.month}
+                    onChange={this.handleChange}
+                    >
+                    <option value=""></option>
+              {months}
+            </select>
+            <select
+                    className="year"
+                    name="year"
+                    value={this.state.year}
+                    onChange={this.handleChange}
+                    >
+                    <option value=""></option>
+              {years}
+            </select>
+          </div>
+
+          
 
         </form>
       </div>

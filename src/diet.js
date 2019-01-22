@@ -21,26 +21,28 @@ class Diet extends Component {
       <>
         <div>
         <br />
-          <label htmlFor="omni"> Omnivore: </label>
             <input type="radio"
                     name="dietary"
                     value="omnivore"
                     selected={dietary === 'omnivore'}
                     onChange={this.handleChange}/>
+                    <label htmlFor="omni"> Omnivore </label>
+                    <br />
 
-          <label htmlFor="veggie"> Vegitarian: </label>
             <input type="radio"
                     name="dietary"
                     value="vegitarian"
                     selected={dietary === 'vegitarian'}
                     onChange={this.handleChange}/>
+                    <label htmlFor="veggie"> Vegitarian </label>
+                    <br />
 
-          <label htmlFor="vegan"> Vegan: </label>
             <input type="radio"
                     name="dietary"
                     value="vegan"
                     selected={dietary === 'vegan'}
                     onChange={this.handleChange}/>
+                    <label htmlFor="vegan"> Vegan </label>
 
           <br />
         </div>

@@ -17,7 +17,7 @@ class Submit extends Component {
 
   render() {
     // const { name, day, month, year, dietary, country, text, formSubmitted, message } = this.state;
-
+    //
     // if (name && day && month && year && dietary && country && text) {
     //   formSubmitted = true
     //   console.log('works')

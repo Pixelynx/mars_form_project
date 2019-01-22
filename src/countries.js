@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import countries from "./countries_list";
+import { countries } from "./countries_list";
 
 class Countries extends Component {
   constructor() {
@@ -24,6 +24,7 @@ class Countries extends Component {
   }
 
   render() {
+    console.log(this.state)
     let country = this.renderCountry();
     return(
       <>
